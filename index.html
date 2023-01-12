@@ -1,8 +1,28 @@
 <!DOCTYPE html>
 
-<html>
-    <head>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-<!-- Your HTML Here -->
+<html lang="en-US">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <!-- Your HTML Here -->
+  <body>
+    <div id="card">
+      <img id="pic" src="ahaan.jpg" width="400" />
+      <div id="button-container">
+        <button id="button" onClick="show()">Tell me about Ahaan!</button>
+      </div>
+      <p id="text">
+        Ahaan is a first-year Computer Science student who loves coding with a
+        purpose. In high school, he won around 10 hackathons by developing
+        JS-heavy web apps that solved actual real-world problems. In his free
+        time, he enjoys working out, skiing, and hanging out with friends.
+      </p>
+    </div>
+    <script>
+      function show() {
+        document.getElementById("button-container").style.display = "none";
+        document.getElementById("text").style.display = "block";
+      }
+    </script>
+  </body>
 </html>

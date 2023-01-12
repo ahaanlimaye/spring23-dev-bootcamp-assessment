@@ -1,3 +1,55 @@
 /* Your Styles Here */
-body{
+body {
+  background-color: dodgerblue;
+  animation: 2s infinite alternate change;
+  font-family: Verdana, Tahoma, sans-serif;
+  color: white;
+}
+
+@keyframes change {
+  from {background-color: dodgerblue;}
+  to {background-color: rgb(29, 114, 226);}
+}
+
+img {
+  margin: auto;
+}
+
+#card {
+  background-color: rgb(29, 62, 226);
+  margin: 50px 200px;
+  border: 2px solid black;
+  border-radius: 25px;
+}
+
+#pic {
+  display: block;
+  margin: 20px auto;
+  border-radius: 50%;
+}
+
+#button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+#button {
+  background-color: dodgerblue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-family: Verdana, Tahoma, sans-serif;
+}
+
+#button:hover {
+  background-color: rgb(29, 114, 226);
+}
+
+#text {
+  display: none;
+  text-align: justify;
+  margin: 20px 200px;
 }
